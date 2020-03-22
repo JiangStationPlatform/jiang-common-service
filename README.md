@@ -1,2 +1,2 @@
 # jiang-common-service
-管理员common
+管理员依赖
