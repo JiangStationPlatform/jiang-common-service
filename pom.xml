@@ -7,7 +7,7 @@
         <groupId>cn.jiang</groupId>
         <artifactId>jiang-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../jiang-dependencies/pom.xml</relativePath>
+<!--        <relativePath>../jiang-dependencies/pom.xml</relativePath>-->
     </parent>
 
     <artifactId>jiang-common-service</artifactId>
@@ -16,12 +16,15 @@
     <name>jiang-common-service</name>
 
     <dependencies>
-        <!-- Spring Boot Begin -->
+        <!-- comment依赖 Start-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>cn.jiang</groupId>
+            <artifactId>jiang-common</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
+        <!-- comment依赖 End-->
+
+        <!-- Spring Boot Begin -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
@@ -69,6 +72,7 @@
             <!--<scope>runtime</scope>-->
         </dependency>
         <!-- Database End -->
+
     </dependencies>
 
 
